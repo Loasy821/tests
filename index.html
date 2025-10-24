@@ -1,0 +1,1687 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Friday Night Funkin&#8217; Online Game 🕹️ Play Now</title>
+<style>
+  body {
+            color: #ededed;
+            background-color: #000;
+            border: none;
+            margin: 0;
+            font-family: sans-serif;
+                        overflow-x: hidden;
+                    }
+
+        h1 {
+            font-size: 1.8em;
+            font-family: sans-serif;
+            line-height: 1.167em
+        }
+
+        h1,
+        h1 a,
+        h1 a:visited {
+            color: #f4f4f4;
+        }
+
+        h2 {
+            color: #f4f4f4;
+            line-height: 1em;
+        }
+
+    
+	header {
+		height: 60px;
+	}
+
+
+        p {
+            line-height: 1.8em;
+        }
+
+        .boxInner2,
+        .boxInner3 {
+            height: 208px;
+            width: 180px;
+            background: #2a2a2a;
+            color: #fff;
+        }
+
+        .boxInner2 a,
+        .boxInner3 a {
+            color: #626262
+        }
+
+        .boxInner,
+        .boxInner2,
+        .boxInner3 {
+            margin: 4px 20px 12px;
+			border-radius: 10px;
+            position: relative;
+        }
+
+        .boxInner3 img {
+            border-radius: 5px;
+        }
+
+        .titleBox {
+            bottom: 0;
+            width: 170px;
+            background-color: #1e1e1e;
+            border-radius: 0 0 10px 10px;
+            font: 15px 'Lucida Sans', sans-serif;
+            padding: 5px;
+            overflow: hidden;
+            position: absolute;
+            color: #eee;
+        }
+
+        a {
+            text-decoration: none;
+            color: #ededed;
+        }
+
+        .morelinks a {
+            font-weight: 600;
+            font-size: 15px !important;
+        }
+
+        #items li,
+        .navlink,
+        .navlink a,
+        ul.tabs li {
+            display: inline-block
+        }
+
+        .logo {
+            padding: 15px;
+        }
+
+        .logo a {
+            font-size: 20px;
+            color: #ffc600;
+            font-weight: 700;
+        }
+
+        ::placeholder {
+            color: #cbcbcb;
+        }
+
+        #content {
+            text-align: center;
+            background: #000;
+        }
+
+        ol,
+        ul {
+            padding: 0;
+        }
+		
+		.favorite{
+		    font-size: 30px;
+			padding-right: 10px;
+		
+		}
+     .boxInner2 img {
+                border-radius: 10px 10px 0 0;
+        }
+
+.right-button {
+    right: 0;
+	margin: 175px -20px;
+    display: inline-block;
+    background-color: #000;
+    width: 3em;
+    height: 3em;
+    border: .5em solid #f9f9f9;
+    border-radius: 50%;
+    margin-left: 1.5em
+}
+
+
+
+.vote-tooltip {
+    position: absolute;
+    padding: 8px 12px;
+    border-radius: 4px;
+    font-size: 14px;
+    z-index: 1000;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.2);
+    display: none;
+    /* Position it relative to the score-button */
+    top: -40px;
+    left: 50%;
+    transform: translateX(-50%);
+    white-space: nowrap;
+}
+
+.vote-tooltip-error {
+    background: #454545;
+    color: white;
+}
+
+.vote-tooltip-success {
+    background: #4CAF50;
+    color: white;
+}
+
+.vote-tooltip-error:after {
+    content: '';
+    position: absolute;
+    bottom: -5px;
+    left: 50%;
+    transform: translateX(-50%);
+    border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
+    border-top: 5px solid #454545;
+}
+
+.vote-tooltip-success:after {
+    content: '';
+    position: absolute;
+    bottom: -5px;
+    left: 50%;
+    transform: translateX(-50%);
+    border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
+    border-top: 5px solid #4CAF50;
+}
+
+@media screen and (min-width:610px) {
+	p.agelimit,p.extlink {
+		margin-top: 150px;
+		margin-left: -300px;
+		color: #fff;
+	}
+}
+@media (min-width: 610px) and (max-width: 1111px) {
+	p.agelimit,p.extlink {
+		margin-top: 0px;
+		margin-left: 0px;
+		color: #fff;
+	}
+}
+
+
+.score-button {
+    position: relative; /* Needed for absolute positioning of tooltip */
+}
+
+
+	 #description ul,
+        #description ol {
+			line-height: 1.8em;
+            padding: 5px 30px;
+        }
+       #content {
+            text-align: center;
+            background: #000;
+        }
+div#howto ul {
+    padding-left: 30px;
+}
+
+        .tag-carousel {
+            margin: auto auto;
+            padding: 15px;
+            position: relative;
+        }
+
+        .tag-carousel2 {
+            width: 90%;
+			height: 272px;
+        }
+		.gamehead{
+			    display: flex;
+			justify-content: space-between;
+				background-color: #0c0c0c;
+			padding-left: 10px;
+			 border: 1px solid rgb(101 101 101 / 15%);
+		}
+        .score-button {
+            display: none;
+        }
+
+        .slider,
+        .slider2 {
+            display: flex;
+            width: 100%;
+            overflow: hidden;
+        }
+
+        span.sf.alignleft {
+            font-weight: 700;
+            font-size: 1.5em;
+            padding: 10px;
+        }
+
+        .alignleft {
+            float: left;
+        }
+
+        ul.tags {
+            list-style: none;
+        }
+
+        a.moreless.more {
+            display: flex;
+            margin: 10px 0;
+        }
+
+        #playgame {
+            justify-content: center;
+            display: grid;
+            margin: 20px 0;
+        }
+
+        #how-to p,
+        #description p {
+            max-width: 75%;
+            color: #e4e4e4;
+            line-height: 1.8em;
+        }
+
+        .as,
+		.dda,
+        .as2 {
+            max-height: 93px;
+            text-align: center;
+        }
+
+        ul#breadcrumb {
+            display: inline-flex;
+            list-style: none;
+            padding: 15px;
+			margin-top: 0px;
+            font-size: 15px;
+            display: flex;
+            flex-flow: wrap;
+        }
+
+        ul#breadcrumb li+li:before {
+            padding: 5px;
+            color: #13aeff;
+            content: "/\00a0";
+        }
+
+        .playbutton {
+            align-items: center;
+            padding: 0 200px;
+            height: 30vh;
+			position: sticky;
+            display: flex;
+            flex-wrap: wrap;
+            background: #181818;
+            border: 1px solid rgb(101 101 101 / 15%);
+        }
+		.playbutton:before {
+			content: " ";
+			position: absolute;
+			left: 0;
+			top: 0;
+			width: 100%;
+			height: 100%;
+			box-sizing: border-box;
+						background-image: url(https://kbhgames.com/wp-content/uploads/2020/11/Friday-Night-Funkin.png);
+						background-repeat: no-repeat;
+			background-size: cover;
+			filter: blur(50px) brightness(0.5);
+			z-index: -1;
+			
+			
+		}
+        .ptb img {
+            border-radius: 100px;
+			border: 3px solid #000000;
+        }
+		.btnplaynow {
+			background-color: #000000;
+			border: 1px solid #333333;
+			border-radius: 10px;
+			margin-left: 10px;
+			padding: 10px;
+		
+		}
+		.btnplaynow:hover {
+			box-shadow: inset 400px 0 0 0 #3e8e41;
+		}
+        #info {
+            padding: 0 7%;
+            min-height: 400px;
+        }
+
+        ul.tabs {
+				padding: 3px;
+
+				border-radius: 5px 5px 0 0;
+				margin: auto;
+				padding: 5px 0 0px;
+				max-width: 1000px;
+
+        }
+
+        .tags li {
+            margin: 5px;
+        }
+
+        .tags {
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        .tags a,
+        .tags a:visited {
+            border: 1px solid #24617b;
+            font-size: .917em !important;
+            font-weight: 600;
+            padding: 8px;
+            -webkit-border-radius: 2px;
+            -moz-border-radius: 2px;
+            border-radius: 10px;
+        }
+
+        .playnowtext {
+            font-size: 50px;
+            color: white;
+            display: contents;
+            cursor: pointer;
+            padding: 30px 10px;
+            font-weight: 700;
+        }
+
+        #info-box {
+            padding: 5px 0 30px;
+			max-width: 1000px;
+			margin: 15px auto;
+        }
+
+        #info-box a {
+            color: #abd4fd;
+        }
+
+        #info-box ul {
+            line-height: 1.8em;
+        }
+
+.midbox {
+			font-size: 18px;
+			background-color: #242424;
+			text-align: left;
+			max-width: 100%;
+			min-height: 425px;
+			margin: 0% 6%;
+			background: rgba(30, 30, 30, 0.8);
+			border: 1px solid rgb(101 101 101 / 15%);
+			border-radius: 16px;
+			padding: 1.5rem;
+			backdrop-filter: blur(12px);
+			-webkit-backdrop-filter: blur(12px);
+			box-shadow: 0 8px 24px rgba(0, 0, 0, 0.6);
+        }
+
+        .midbox h1 {
+            color: #e4e4e4;
+  
+        }
+
+        .tab-content {
+            padding: 10px
+        }
+
+        ul.tabs li {
+            color: #fafafa;
+            padding: 3px;
+			    text-align: center;
+            cursor: pointer;
+            width: 150px;
+            font-weight: 600;
+        }
+
+        ul.tabs li.current {
+               color: #EEE;
+			       text-align: center;
+				border-radius: 10px;
+				border: 1px solid #494949;
+				background: #181818;
+				padding: 7px;
+        }
+
+        .tab-content.current {
+            display: inherit;
+        }
+
+
+		.tab-content {
+			display: none;
+		}
+
+        @media (hover:none) {
+            .nomobile {
+                display: none;
+            }
+        }
+
+        @media screen and (max-width: 1600px) {
+            .playbutton {
+                padding: 0 150px;
+            }
+        }
+
+        @media screen and (max-width: 1400px) {
+            .playbutton {
+                padding: 0 100px;
+            }
+        }
+
+        @media screen and (max-width: 1200px) {
+            .playbutton {
+                padding: 0 70px;
+            }
+        }
+
+        @media screen and (max-width: 979px) {
+            #info {
+                padding: 0 10px;
+            }
+            #extra-desc {
+                padding: 7px;
+            }
+            .playbutton {
+                margin: 10px;
+                padding: 0 40px;
+                justify-content: center;
+            }
+      
+            ul.tabs {
+                display: none;
+            }
+            ul.tabs li {
+                width: 20%;
+            }
+        }
+
+        @media screen and (max-width: 768px) {
+            .playbutton {
+                padding: 0 25px;
+            }
+        }
+
+        @media screen and (max-width: 480px) {
+            .playbutton {
+                padding: 0 15px;
+            }
+			   .playnowtext {
+                font-size: 25px;
+            }
+        }
+
+        #how-to button {
+            font-weight: 600;
+        }
+		p#extra-desc {
+			padding: 0 7%;
+			text-align: left;
+		}
+			
+			
+			.gridofimages {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 10px;
+    padding: 10px;
+}
+
+
+	@media only screen and (max-width: 768px) {
+			.dda,
+            .as2 {
+                display: none;
+			}
+	}
+
+
+
+
+
+
+   .align-right {
+            float: right;
+        }
+
+        #mySidebar {
+            height: 100%;
+            width: 180px;
+            background: #000;
+            position: fixed !important;
+            overflow: hidden;
+            z-index: 999999;
+        }
+
+        #mySidebar:hover {
+            overflow: auto;
+        }
+
+        a.sidebar-bar-item {
+            display: block;
+            padding: 5px;
+            color: #ddd !important;
+            text-decoration: none;
+        }
+
+        a.sidebar-bar-item:hover {
+            background: #19273b;
+            text-decoration: none;
+        }
+
+        #mySidebar::-webkit-scrollbar {
+            width: 7px;
+        }
+
+        #mySidebar::-webkit-scrollbar-thumb {
+            background: rgba(168, 168, 168, 0.8);
+        }
+
+        #searchform input[type="text"] {
+          border-radius: 2px;
+    width: 50%;
+    font-size: 18px;
+    height: 10px;
+    color: #ededed;
+    background-color: #000;
+    border: 1px solid #4b4b4b;
+    padding: 10px;
+        }
+
+        .navlink button {
+            margin: 0 10px;
+            color: #ededed;
+            background-color: #575757;
+            border: none;
+            border-radius: 5px;
+            padding: 5px;
+            font-size: x-large;
+            width: 55px;
+            display: none
+        }
+
+        .navlink button:focus {
+            outline: 0;
+        }
+
+
+        button.btn.btn-primary {
+              border-radius: 0px;
+				font-size: 16px;
+				height: 33px;
+				border: 0px solid #000;
+				background-color: #181818;
+				padding: 0 15px 0 15px;
+
+        }
+
+.searchbutton{
+	color: #fff;
+    border: 1px solid #645b5b;
+    background-color: #181818;
+    font-size: 30px;
+    margin-top: 10px;
+    padding: 20px;
+}
+
+        #info-box h3 {
+            padding: 20px 0 0;
+            margin: 0 0 20px;
+        }
+
+        .searchbar {
+       
+            width: 70%;
+        }
+
+        @media only screen and (max-width: 480px) {
+            #back-to-top,
+            .login {
+                display: none;
+            }
+            #how-to p,
+            #description p {
+                max-width: 100%;
+            }
+            #searchform input[type="text"] {
+                width: 155px;
+            }
+            .searchbar {
+                width: 0%;
+                padding: 0px
+            }
+            #info-box .align-right {
+                float: none;
+            }
+            #how-to,
+            #description {
+                max-width: 100%;
+            }
+            #extra-desc {
+                padding: 15px !important;
+            }
+            #topnav {
+                height: 60px;
+                padding: 10px;
+            }
+            #mySidebar {
+                overflow-y: auto;
+            }
+            .tagwrap {
+                padding: 1px
+            }
+            .s2,
+            .s,
+            .as,
+			.as2,
+            .rr {
+                display: none;
+            }
+			
+	
+
+        }
+
+        .rr {
+            margin: auto;
+            float: right;
+            padding: 10px;
+        }
+
+
+/* Place your CSS for single posts here */
+
+/* ===== TOP NAVBAR ===== */
+.top-nav {
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      height: 56px;
+      background-color: #0f0f0f;
+      border-bottom: 1px solid #222;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 0 16px;
+      z-index: 1001;
+      box-sizing: border-box;
+    }
+
+    .nav-left {
+      display: flex;
+      align-items: center;
+      gap: 16px;
+    }
+
+    .nav-right {
+      display: flex;
+      align-items: center;
+      gap: 16px;
+    }
+
+    .menu-btn {
+      background: none;
+      border: none;
+      font-size: 1.5rem;
+      cursor: pointer;
+      color: #fff;
+    }
+
+    .nav-logo {
+      font-size: 1.4rem;
+      font-weight: bold;
+      color: #ffc800;
+      user-select: none;
+    }
+
+    /* ===== SEARCH BAR ===== */
+    .search-container {
+      display: flex;
+      align-items: center;
+      flex: 1;
+      max-width: 600px;
+      margin: 0 20px;
+      transition: all 0.3s ease;
+      position: relative;
+    }
+
+    .search-container form {
+      display: flex;
+      align-items: center;
+      width: 100%;
+      position: relative;
+    }
+
+    .search-container input {
+      flex: 1;
+      padding: 10px 50px 10px 16px;
+      border: 1px solid #333;
+      border-radius: 20px;
+      background-color: #121212;
+      color: #fff;
+      font-size: 1rem;
+      width: 100%;
+    }
+
+    .search-container input:focus {
+      outline: none;
+      border-color: #555;
+    }
+
+    .search-container button {
+      position: absolute;
+      right: 5px;
+      padding: 6px 12px;
+      border: none;
+      background-color: transparent;
+      color: #fff;
+      cursor: pointer;
+      border-radius: 20px;
+      font-size: 1.3rem;
+      transition: background-color 0.2s;
+    }
+
+    .search-container button:hover {
+      background-color: #303030;
+    }
+
+    /* ===== HEART ICON ===== */
+    .heart-btn {
+      background: none;
+      border: none;
+      cursor: pointer;
+      font-size: 2.5rem;
+      color: #fff;
+      transition: color 0.3s;
+      text-decoration: none;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .heart-btn:hover {
+      color: #ff0000;
+    }
+
+    /* ===== SIDEBAR ===== */
+    .wrapper {
+        display: flex;
+		min-height: calc(100vh - 56px);
+	    overflow: hidden;
+    }
+
+    .sidebar {
+      width: 200px;
+      background-color: #000;
+      border-right: 1px solid #222;
+      overflow-y: auto;
+      position: fixed;
+      top: 0;
+      left: 0;
+      bottom: 0;
+      padding-top: 56px;
+      box-sizing: border-box;
+      z-index: 1000;
+	      /* Firefox scrollbar - hidden by default */
+      scrollbar-width: none;
+      scrollbar-color: transparent transparent;
+    }
+
+    .sidebar.hidden {
+      transform: translateX(-100%);
+    }
+
+    .sidebar:hover {
+      scrollbar-width: thin;
+      scrollbar-color: #333 transparent;
+    }
+
+
+    .sidebar::-webkit-scrollbar {
+      width: 0px;
+      background: transparent;
+    }
+
+    .sidebar:hover::-webkit-scrollbar {
+      width: 8px;
+    }
+
+    .sidebar::-webkit-scrollbar-thumb {
+      background-color: transparent;
+      border-radius: 4px;
+    }
+
+    .sidebar:hover::-webkit-scrollbar-thumb {
+      background-color: #333;
+    }
+
+    .sidebar::-webkit-scrollbar-thumb:hover {
+      background-color: #444;
+    }
+
+    .navbar-collapse ul {
+      list-style: none;
+      flex-grow: 1;
+      padding: 10px 0;
+      background-color: #000;
+    }
+
+    .navbar-collapse ul li a {
+      display: block;
+      padding: 12px 20px;
+      color: #ccc;
+      text-decoration: none;
+      transition: background 0.2s, color 0.2s;
+      white-space: nowrap;
+    }
+
+    .navbar-collapse ul li a:hover {
+      background-color: #222;
+      color: #fff;
+    }
+
+    /* Footer links styling */
+    .footer-links {
+      font-size: 0.7rem;
+      color: #666;
+      padding: 8px 20px;
+      margin-top: 10px;
+      border-top: 1px solid #333;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px;
+    }
+
+    .footer-links a {
+      color: #666;
+      text-decoration: none;
+      transition: color 0.2s;
+    }
+
+    .footer-links a:hover {
+      color: #999;
+    }
+
+    /* Section separators */
+    .section-separator {
+      height: 1px;
+      background-color: #333;
+      margin: 16px 20px;
+    }
+
+    /* ===== MAIN CONTENT ===== */
+    .main-content {
+      flex-grow: 1;
+      padding: 10px;
+      padding-top: 5px;
+      color: #fff;
+      margin-left: 200px;
+      transition: margin-left 0.15s ease, max-width 0.15s ease;
+      box-sizing: border-box;
+      max-width: calc(100vw - 200px);
+    }
+
+    .sidebar.hidden ~ .main-content {
+      margin-left: 0;
+      max-width: 100vw;
+    }
+
+    /* ===== OVERLAY for Mobile ===== */
+    .overlay {
+      display: none;
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100vh;
+      background: rgba(0, 0, 0, 0.6);
+      z-index: 999;
+    }
+
+    /* ===== MEDIA QUERIES ===== */
+    @media (max-width: 992px) {
+      .search-container {
+        max-width: 400px;
+      }
+    }
+
+    @media (max-width: 768px) {
+      .sidebar {
+        position: fixed;
+        transform: translateX(-100%);
+        width: 220px;
+      }
+
+      .sidebar.show {
+        transform: translateX(0);
+      }
+
+      .main-content {
+        margin-left: 0;
+        max-width: 100vw;
+      }
+
+      .overlay.show {
+        display: block;
+      }
+
+      .search-container {
+        max-width: 300px;
+        margin: 0 10px;
+      }
+
+      .search-container input {
+        font-size: 0.9rem;
+        padding: 6px 8px;
+      }
+
+      .search-container button {
+        padding: 6px 10px;
+      }
+    }
+
+    @media (max-width: 600px) {
+      .search-container {
+        max-width: 200px;
+      }
+
+      .search-container input {
+        font-size: 0.85rem;
+        padding: 5px 6px;
+      }
+    }
+
+    @media (max-width: 480px) {
+      .search-container {
+        display: none !important;
+      }
+
+      .search-icon-btn {
+        display: inline-block !important;
+        background: none;
+        border: none;
+        color: #fff;
+        font-size: 3rem;
+        cursor: pointer;
+        padding: 0;
+      }
+
+      .mobile-search {
+        display: none;
+        position: fixed;
+        top: 56px;
+        left: 0;
+        width: 100%;
+        background: #0f0f0f;
+        padding: 10px;
+        z-index: 1002;
+      }
+
+      .mobile-search form {
+        display: flex;
+        flex: 1;
+        justify-content: center;
+      }
+
+      .mobile-search input {
+        flex: 1;
+        max-width: 300px;
+        padding: 8px 10px;
+        background: #121212;
+        color: #fff;
+        border: 1px solid #333;
+        border-radius: 2px;
+      }
+
+      .mobile-search form button {
+        padding: 8px 12px;
+        background: #303030;
+        color: #fff;
+        border: none;
+        margin-left: 5px;
+        border-radius: 2px;
+      }
+
+      .mobile-search #close-mobile-search {
+        padding: 8px 12px;
+        background: #303030;
+        color: #fff;
+        border: none;
+        margin-left: 5px;
+        border-radius: 2px;
+      }
+
+      .mobile-search.show {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+    }
+
+
+
+</style>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="shortcut icon" type="image/png" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQBAMAAADt3eJSAAAAMFBMVEU2Njb/xgCuih97ZSvZqg9LQzNcUDFsWy6JbyiWeSW5kxvEmxfjsQr2wAPPohPtuQYI+9kBAAAAVUlEQVR42mNgwA3SWQsgDBWem4JyjApODCqKzcILE4EMfTlmYUXGzYcYFEWYBUUCBYUYFBcaCzc2AkVUYjcLN04EKeaSFJQNBDLSWc2NTZkTyhiIAADOyRDIUV4GggAAAABJRU5ErkJggg==">
+<meta name='robots' content='max-image-preview:large' />
+<meta property="og:title" content="Friday Night Funkin&#8217; Online"><meta property="og:image" content="https://kbhgames.com/wp-content/uploads/2020/11/Friday-Night-Funkin.png"><link rel="canonical" href="https://kbhgames.com/game/friday-night-funkin"><meta name="description" content="Friday Night Funkin’ is a rhythm-based game where players tap arrows in time with music to win rap battles. The goal? Impress your...">			
+<script type="application/ld+json">
+{
+ "@context": "https://schema.org","@type": "WebApplication","name": "Friday Night Funkin&#8217;", "url": "https://kbhgames.com/game/friday-night-funkin",
+ "description": "Friday Night Funkin’ is a rhythm-based game where players tap arrows in time with music to win rap battles. The goal? Impress your...","applicationCategory": "Game","operatingSystem": "Web Browser, Windows, Linux, MacOS, iOS, Android",
+  "offers": {
+    "@type": "Offer",
+    "price": "0",
+    "priceCurrency": "USD"
+  },
+	"thumbnailUrl": "https://kbhgames.com/wp-content/uploads/2020/11/Friday-Night-Funkin.png",				
+				"applicationSubCategory": ["Rhythm Game"]}
+</script>
+
+	 <script async src="https://www.googletagmanager.com/gtag/js?id=G-SRHSFW2NJT"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-SRHSFW2NJT');
+</script>
+	 
+
+ 			
+        <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6866920588347480"
+     crossorigin="anonymous"></script>
+        </head>
+<body>
+
+<div class="top-nav">
+    <div class="nav-left">
+      <button class="menu-btn" id="toggle-btn">☰</button>
+      <a href="https://kbhgames.com" class="nav-logo">KBHGames</a>
+    </div>
+
+    <div class="search-container" id="desktop-search">
+      <form role="search" class="form-search" method="get" action="https://kbhgames.com/">
+        <input type="text" name="s" placeholder="Search for a Game">
+        <button type="submit">⌕</button>
+      </form>
+    </div>
+
+    <div class="nav-right">
+     
+      <button class="search-icon-btn" id="search-icon-btn" style="display: none;">⌕</button>
+  
+      <a href="https://kbhgames.com/favorite" class="heart-btn" title="Favorites">♡</a>
+    </div>
+  </div>
+
+
+  <div class="mobile-search" id="mobile-search">
+    <form role="search" method="get" action="https://kbhgames.com/">
+      <input type="text" name="s" placeholder="Search..." />
+      <button type="submit">Search</button>
+    </form>
+    <button id="close-mobile-search">×</button>
+  </div>
+
+
+  <div class="wrapper">
+    <div class="sidebar" id="sidebar">
+      <div class="navbar-collapse">
+        <ul class="navbar-nav">
+          <li><a href="https://kbhgames.com/new">New Games</a></li>
+          <li><a href="https://kbhgames.com/best-new-games">Best of New</a></li>
+          <li><a href="https://kbhgames.com/trending">Trending</a></li>
+          <li><a href="https://kbhgames.com/best-games">Most Liked</a></li>
+        </ul>
+        
+        <div class="section-separator"></div>
+        
+        <ul class="navbar-nav">
+          <li><a href="https://kbhgames.com/tag/music">Music</a></li>
+          <li><a href="https://kbhgames.com/tag/action">Action</a></li>
+          <li><a href="https://kbhgames.com/tag/puzzle">Puzzle</a></li>
+          <li><a href="https://kbhgames.com/tag/2-player">2 Players</a></li>
+          <li><a href="https://kbhgames.com/tag/sports">Sports</a></li>
+          <li><a href="https://kbhgames.com/tag/shooting">Shooting</a></li>
+          <li><a href="https://kbhgames.com/tag/arcade">Arcade</a></li>
+          <li><a href="https://kbhgames.com/tag/strategy">Strategy</a></li>
+          <li><a href="https://kbhgames.com/tag/fighting">Fighting</a></li>
+          <li><a href="https://kbhgames.com/tag/simulation">Simulation</a></li>
+          <li><a href="https://kbhgames.com/tag/platformer">Platformer</a></li>
+          <li><a href="https://kbhgames.com/tag/educational">Educational</a></li>
+          <li><a href="https://kbhgames.com/tag/racing">Racing</a></li>
+          <li><a href="https://kbhgames.com/tag/funny">Funny</a></li>
+          <li><a href="https://kbhgames.com/tag/retro">Retro</a></li>
+          <li><a href="https://kbhgames.com/tag/multiplayer">Multiplayer</a></li>
+          <li><a href="https://kbhgames.com/tag/running">Run</a></li>
+          <li><a href="https://kbhgames.com/tag/board">Board</a></li>
+          <li><a href="https://kbhgames.com/tag/card">Card</a></li>
+          <li><a href="https://kbhgames.com/tag/cartoon">Cartoon</a></li>
+          <li><a href="https://kbhgames.com/tag/friday-night-funkin">FNF</a></li>
+          <li><a href="https://kbhgames.com/tag/sprunki">Sprunki</a></li>
+          <li><a href="https://kbhgames.com/tag/3d">3D</a></li>
+          <li><a href="https://kbhgames.com/tag/skill">Skill</a></li>
+          <li><a href="https://kbhgames.com/tag/casual">Casual</a></li>
+          <li><a href="https://kbhgames.com/tag/car">Car</a></li>
+          <li><a href="https://kbhgames.com/tag/download">Download</a></li>
+        </ul>
+        <div class="footer-links">
+          <a href="https://kbhgames.com/about">About</a>
+          <a href="https://kbhgames.com/terms-of-use">Terms and Conditions</a>
+          <a href="https://kbhgames.com/privacy">Privacy</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="overlay" id="overlay"></div>
+
+
+
+
+<div class="main-content" id="content">
+
+<ul id="breadcrumb" vocab="https://schema.org/" typeof="BreadcrumbList">
+  <li property="itemListElement" typeof="ListItem">
+    <a property="item" typeof="WebPage" href="https://kbhgames.com">
+      <span property="name">KBHGames</span></a>
+    <meta property="position" content="1">
+  </li> 
+
+
+      
+         
+  
+   
+    
+  
+       
+    	<li property='itemListElement' typeof='ListItem'>
+    <a property='item' typeof='WebPage' href='https://kbhgames.com/tag/music'>
+      <span property='name'>
+	  Music
+	  </span></a>
+    <meta property='position' content='2'>
+  </li>
+  
+  
+  
+
+  
+  	<li property='itemListElement' typeof='ListItem'>
+    <a property='item' typeof='WebPage' href='https://kbhgames.com/tag/rhythm'>
+      <span property='name'>
+	  Rhythm	  </span></a>
+    <meta property='position' content='3'>
+  </li>
+  
+  
+     
+  
+    		<li property='itemListElement' typeof='ListItem'>
+		<a property='item' typeof='WebPage' href='https://kbhgames.com/tag/friday-night-funkin'>
+		<span property='name'>
+		Friday Night Funkin
+		</span></a>
+		<meta property='position' content='4'>
+	  </li>
+	    
+  
+</ul>
+<div id="playscreen">
+		
+
+<div class="dda">
+<ins class="adsbygoogle"
+     style="display:inline-block;width:728px;height:90px"
+     data-ad-client="ca-pub-6866920588347480"
+     data-ad-slot="8221213457"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+</div>
+
+
+
+
+		<div id="playgame">
+	
+
+         <div class="gamehead">
+		 <h1>Friday Night Funkin&#8217;</h1>
+                          <div class="score-button"><div class='watch-action'><div class='watch-position align-left'><a class='lbg-style1 like-111243 jlk' href='https://kbhgames.com/wp-admin/admin-ajax.php?action=wti_like_post_process_vote&amp;task=like&amp;post_id=111243&amp;nonce=2d55945eb5' data-task='like' data-post_id='111243' data-nonce='2d55945eb5' rel='nofollow'><div class='action-like'><div class='icon icon-thumbs-up'><div style='display: inline;padding-left:5px'>715K</div></div></div></a></div> <div class='status-111243 status align-left'></div></div><div class='wti-clear'></div></div>
+        </div>
+   
+			
+		<div id="game">
+	
+				<div class="playbutton">
+<div class="playnowtext" data-id="111243"  >
+		<div class="ptb"><img fetchpriority="high" src="https://kbhgames.com/wp-content/uploads/2020/11/Friday-Night-Funkin.png"  width="180" height="180" alt="Friday Night Funkin&#8217;"></div>
+		<span class="btnplaynow">&#9658; Play Now!</span></div>
+</div>
+
+</div>
+
+		</div>
+
+		
+</div>
+	
+<div class="tag-carousel tag-carousel2">
+   <span class="sf alignleft">You might also Like</span>
+   <div id="related" class="slider">
+   
+
+	      <div class="boxInner2">
+         <a href="https://kbhgames.com/game/friday-night-funkin-v-s-whitty-full-week">
+            <img class="lazy" src="/m.svg" data-src="https://kbhgames.com/wp-content/uploads/2021/03/friday-night-funkin-v-s-whitty-full-week.png"  width="180" height="180">
+            <div class="titleBox">Friday Night Funkin&#039; V.S. Whitty Full Week</div>
+         </a>
+      </div>
+
+		      <div class="boxInner2">
+         <a href="https://kbhgames.com/game/friday-night-funkin-vs-hex-mod-full-week">
+            <img class="lazy" src="/m.svg" data-src="https://kbhgames.com/wp-content/uploads/2021/04/friday-night-funkin-vs-hex-mod-full-week.jpg"  width="180" height="180">
+            <div class="titleBox">FNF Vs. Hex 2 (Weekend Update)</div>
+         </a>
+      </div>
+
+		      <div class="boxInner2">
+         <a href="https://kbhgames.com/game/friday-night-funkin-the-x-event">
+            <img class="lazy" src="/m.svg" data-src="https://kbhgames.com/wp-content/uploads/2021/04/fnf-x-mod.jpg"  width="180" height="180">
+            <div class="titleBox">Friday Night Funkin: The X Event Full Week</div>
+         </a>
+      </div>
+
+		      <div class="boxInner2">
+         <a href="https://kbhgames.com/game/friday-night-funkin-hatsune-miku">
+            <img class="lazy" src="/m.svg" data-src="https://kbhgames.com/wp-content/uploads/2021/04/friday-night-funkin-hatsune-miku.jpg"  width="180" height="180">
+            <div class="titleBox">Friday Night Funkin&#039; + Hatsune Miku</div>
+         </a>
+      </div>
+
+		      <div class="boxInner2">
+         <a href="https://kbhgames.com/game/friday-night-funkin-sarventes-mid-fight-masses">
+            <img class="lazy" src="/m.svg" data-src="https://kbhgames.com/wp-content/uploads/2021/04/friday-night-funkin-sarventes-mid-fight-masses-1.png"  width="180" height="180">
+            <div class="titleBox">Friday Night Funkin’ Sarvente&#039;s Mid-Fight Masses</div>
+         </a>
+      </div>
+
+		      <div class="boxInner2">
+         <a href="https://kbhgames.com/game/friday-night-funkin-the-tricky-mod">
+            <img class="lazy" src="/m.svg" data-src="https://kbhgames.com/wp-content/uploads/2021/04/friday-night-funkin-the-tricky-mod.png"  width="180" height="180">
+            <div class="titleBox">Friday Night Funkin’ Vs Tricky the Clown Mod</div>
+         </a>
+      </div>
+
+		      <div class="boxInner2">
+         <a href="https://kbhgames.com/game/friday-night-funkin-vs-sky-full-week">
+            <img class="lazy" src="/m.svg" data-src="https://kbhgames.com/wp-content/uploads/2021/04/Friday-Night-Funkin-VS-Sky-Full-Week.jpg"  width="180" height="180">
+            <div class="titleBox">Friday Night Funkin VS Sky Full Week</div>
+         </a>
+      </div>
+
+		      <div class="boxInner2">
+         <a href="https://kbhgames.com/game/fiddlebops-a-funny-incredibox-mod">
+            <img class="lazy" src="/m.svg" data-src="https://kbhgames.com/wp-content/uploads/2024/11/FiddleBops-Incredibox.jpg"  width="180" height="180">
+            <div class="titleBox">FiddleBops - A Funny Incredibox mod</div>
+         </a>
+      </div>
+
+		      <div class="boxInner2">
+         <a href="https://kbhgames.com/game/fnf-dreadful-funkin-night">
+            <img class="lazy" src="/m.svg" data-src="https://kbhgames.com/wp-content/uploads/2024/12/fnf-dreadful-funkin-night.jpg"  width="180" height="180">
+            <div class="titleBox">FNF Dreadful Funkin&#039; Night</div>
+         </a>
+      </div>
+
+		      <div class="boxInner2">
+         <a href="https://kbhgames.com/game/friday-night-at-the-pizza-tower-vs-peppino">
+            <img class="lazy" src="/m.svg" data-src="https://kbhgames.com/wp-content/uploads/2025/01/friday-night-at-the-pizza-tower-vs-peppino.jpg"  width="180" height="180">
+            <div class="titleBox">Friday Night At The Pizza Tower (Vs. Peppino)</div>
+         </a>
+      </div>
+
+		      <div class="boxInner2">
+         <a href="https://kbhgames.com/game/my-little-pony-equestria-fall-formal-dance-off">
+            <img class="lazy" src="/m.svg" data-src="https://kbhgames.com/wp-content/uploads/2024/12/My-Little-Pony-Equestria-Fall-Formal-Dance-Off.jpg"  width="180" height="180">
+            <div class="titleBox">My Little Pony Equestria Fall Formal Dance-Off</div>
+         </a>
+      </div>
+
+		      <div class="boxInner2">
+         <a href="https://kbhgames.com/game/funkin-with-the-bad-guys">
+            <img class="lazy" src="/m.svg" data-src="https://kbhgames.com/wp-content/uploads/2025/03/Funkin-with-the-Bad-Guys.jpg"  width="180" height="180">
+            <div class="titleBox">Funkin&#039; with the Bad Guys</div>
+         </a>
+      </div>
+
+		      <div class="boxInner2">
+         <a href="https://kbhgames.com/game/fnf-silly-funkin">
+            <img class="lazy" src="/m.svg" data-src="https://kbhgames.com/wp-content/uploads/2025/03/FNF-Silly-Funkin.jpg"  width="180" height="180">
+            <div class="titleBox">FNF Silly Funkin</div>
+         </a>
+      </div>
+
+		      <div class="boxInner2">
+         <a href="https://kbhgames.com/game/music-ball-hop">
+            <img class="lazy" src="/m.svg" data-src="https://kbhgames.com/wp-content/uploads/2025/07/Music-Ball-Hop.jpg"  width="180" height="180">
+            <div class="titleBox">Music Ball Hop</div>
+         </a>
+      </div>
+
+		      <div class="boxInner2">
+         <a href="https://kbhgames.com/game/duo-tiles-music-game">
+            <img class="lazy" src="/m.svg" data-src="https://kbhgames.com/wp-content/uploads/2025/10/Duo-Tiles-Music-Game.jpg"  width="180" height="180">
+            <div class="titleBox">Duo Tiles Music Game</div>
+         </a>
+      </div>
+
+		      <div class="boxInner2">
+         <a href="https://kbhgames.com/game/fnf-checked-but-everyone-sings-it">
+            <img class="lazy" src="/m.svg" data-src="https://kbhgames.com/wp-content/uploads/2022/05/fnf-checked-but-everyone-sings-it.jpg"  width="180" height="180">
+            <div class="titleBox">FNF Checked But Everyone Sings it</div>
+         </a>
+      </div>
+
+		      <div class="boxInner2">
+         <a href="https://kbhgames.com/game/jump-in-rhythm-to-the-hit-cat-disco">
+            <img class="lazy" src="/m.svg" data-src="https://kbhgames.com/wp-content/uploads/2025/07/Jump-in-Rhythm-to-the-Hit-Cat-Disco.jpg"  width="180" height="180">
+            <div class="titleBox">Jump in Rhythm to the Hit! Cat Disco!</div>
+         </a>
+      </div>
+
+		      <div class="boxInner2">
+         <a href="https://kbhgames.com/game/animation-vs-friday-night-funkin-mod">
+            <img class="lazy" src="/m.svg" data-src="https://kbhgames.com/wp-content/uploads/2022/10/animation-vs-friday-night-funkin-mod.jpg"  width="180" height="180">
+            <div class="titleBox">Animation VS Friday Night Funkin&#039; Full Mod</div>
+         </a>
+      </div>
+
+		      <div class="boxInner2">
+         <a href="https://kbhgames.com/game/friday-night-funkin-saltys-jokebook">
+            <img class="lazy" src="/m.svg" data-src="https://kbhgames.com/wp-content/uploads/2022/09/friday-night-funkin-saltys-jokebook.jpg"  width="180" height="180">
+            <div class="titleBox">Friday Night Funkin&#039;: Salty&#039;s Jokebook</div>
+         </a>
+      </div>
+
+		      <div class="boxInner2">
+         <a href="https://kbhgames.com/game/fnf-mistful-crimson-morning-reboot">
+            <img class="lazy" src="/m.svg" data-src="https://kbhgames.com/wp-content/uploads/2025/04/FNF-Mistful-Crimson-Morning-Reboot-1.jpg"  width="180" height="180">
+            <div class="titleBox">FNF Mistful Crimson Morning Reboot</div>
+         </a>
+      </div>
+
+		      <div class="boxInner2">
+         <a href="https://kbhgames.com/game/friday-night-funkin-vs-bob-and-bosip">
+            <img class="lazy" src="/m.svg" data-src="https://kbhgames.com/wp-content/uploads/2021/06/Friday-Night-Funkin’-vs-Bob-and-Bosip.jpg"  width="180" height="180">
+            <div class="titleBox">Friday Night Funkin’ vs Bob and Bosip (The Expansion Update)</div>
+         </a>
+      </div>
+
+		      <div class="boxInner2">
+         <a href="https://kbhgames.com/game/friday-night-funkin-b-side-redux">
+            <img class="lazy" src="/m.svg" data-src="https://kbhgames.com/wp-content/uploads/2022/09/friday-night-funkin-b-side-redux-1.jpg"  width="180" height="180">
+            <div class="titleBox">Friday Night Funkin: B-Side Redux</div>
+         </a>
+      </div>
+
+		      <div class="boxInner2">
+         <a href="https://kbhgames.com/game/friday-night-funkin-logic-mod">
+            <img class="lazy" src="/m.svg" data-src="https://kbhgames.com/wp-content/uploads/2021/07/Friday-Night-Funkin-Logic-Mod.jpg"  width="180" height="180">
+            <div class="titleBox">Friday Night Funkin Logic Mod</div>
+         </a>
+      </div>
+
+		      <div class="boxInner2">
+         <a href="https://kbhgames.com/game/friday-night-funkin-vs-him">
+            <img class="lazy" src="/m.svg" data-src="https://kbhgames.com/wp-content/uploads/2022/11/Friday-Night-Funkin-vs-Him.jpg"  width="180" height="180">
+            <div class="titleBox">Friday Night Funkin vs Him</div>
+         </a>
+      </div>
+
+		      <div class="boxInner2">
+         <a href="https://kbhgames.com/game/funkin-mix">
+            <img class="lazy" src="/m.svg" data-src="https://kbhgames.com/wp-content/uploads/2023/02/funkin-mix.jpg"  width="180" height="180">
+            <div class="titleBox">Funkin&#039; MIX</div>
+         </a>
+      </div>
+
+		
+      <div class="left-button onecol" style="display: block;"></div>
+      <div class="right-button onecol" style="display: block;"></div>
+   </div>
+</div>
+		<!-- Fetched from cache --><div class="midbox">
+	<ul class="tabs">
+		<li class="tab-link current" data-tab="info">Description</li>
+		<li class="tab-link show-comments" data-tab="review">Comment</li>
+
+			</ul>
+	<div id="info" class="tab-content current">
+
+<div id="info-box">
+
+<ul class="tags"><li><a href="https://kbhgames.com/tag/arcade">Arcade</a></li><li><a href="https://kbhgames.com/tag/dance">Dance</a></li><li><a href="https://kbhgames.com/tag/friday-night-funkin">Friday Night Funkin</a></li><li><a href="https://kbhgames.com/tag/funny">Funny</a></li><li><a href="https://kbhgames.com/tag/music">Music</a></li><li><a href="https://kbhgames.com/tag/reaction-time">Reaction Time</a></li><li><a href="https://kbhgames.com/tag/rhythm">Rhythm</a></li><li><a href="https://kbhgames.com/tag/skill">Skill</a></li></ul>
+
+
+
+<div id="description">
+
+<p>Friday Night Funkin’ is a rhythm-based game where players tap arrows in time with music to win rap battles. The goal? Impress your character’s girlfriend by out-singing her dad, a tough musician, and other quirky opponents like Skid, Pump, and Pico. Each of the 8 story chapters (including the new Week End 1) tests timing and coordination across three difficulty levels, with “Hard” demanding near-perfect precision. For practice, Freeplay mode lets players focus on individual songs.</p>
+<p>The game started in 2020 as a small project during a game jam but grew into a hit with 25 tracks, 8 story weeks, and mods created by fans. Players can access the base game and popular mods unblocked at kbhgames.com, whether on a home computer, Chromebook, or during school breaks. Recent updates like Week End 1 add story twists, new battles, and a “Night” difficulty with remixed challenges. The Pitstop 2 update introduced fresh songs and features, while the Pico Special lets players unlock remixes by switching characters.</p>
+<p>Though simple in concept, the game’s open-source design and steady updates keep it engaging. Success hinges on rhythm, not flashy graphics, making it easy to pick up but tough to master—especially for those aiming to conquer its hardest modes.</p>
+<p>The game’s full version, <em>Friday Night Funkin’: The Full Ass Game</em>, is still being developed after a successful Kickstarter campaign. Each level introduces new opponents and songs, challenging players to keep up with the rhythm. While the demo remains widely available, the team continues working on expanding the story and gameplay for the final release.</p>
+<h3>Story:</h3>
+<p>You play as the &#8220;Boyfriend&#8221;, whom had to prove himself worthy of dating the &#8220;Girlfriend&#8221; in singing and rapping battle against arrays of different characters ranging from her Dad to her Mom.</p>
+<h3><strong>Weeks &amp; Songs</strong></h3>
+<ul>
+<li>Week 1: <a href="https://youtu.be/V60N12UFNN4" target="_blank" rel="noopener noreferrer nofollow">Bopeebo</a>, <a href="https://youtu.be/mx82b-3A--Q" target="_blank" rel="noopener noreferrer nofollow">Fresh</a>, <a href="https://youtu.be/w0WyKTSuX4U" target="_blank" rel="noopener noreferrer nofollow">Dad Battle</a></li>
+<li>Week 2: <a href="https://youtu.be/EiNwUpco4OI" target="_blank" rel="noopener noreferrer nofollow">Spookeez</a>, <a href="https://youtu.be/_Q7J97WD3Gg" target="_blank" rel="noopener noreferrer nofollow">South</a>, Monster</li>
+<li>Week 3: <a href="https://youtu.be/kaNuYpHWcac" target="_blank" rel="noopener noreferrer nofollow">Pico</a>, <a href="https://youtu.be/fwZ8jLFFL1Y" target="_blank" rel="noopener noreferrer nofollow">Philly</a>, <a href="https://youtu.be/aQ2tXk-2UEg" target="_blank" rel="noopener noreferrer nofollow">Blammed</a></li>
+<li>Week 4: <a href="https://youtu.be/YzJKStx9IyU" target="_blank" rel="noopener noreferrer nofollow">Satin-Panties</a>, <a href="https://youtu.be/OIsp8KrwSVY" target="_blank" rel="noopener noreferrer nofollow">High</a>, <a href="https://youtu.be/dOPrN6aJ7TI" target="_blank" rel="noopener noreferrer nofollow">MILF</a></li>
+<li>Week 5: <a href="https://youtu.be/DWdMu4X4jQ0" target="_blank" rel="noopener noreferrer nofollow">Cocoa</a>, <a href="https://youtu.be/jQ4QBD-Cu5I" target="_blank" rel="noopener noreferrer nofollow">Eggnog</a>, Winter-Horrorland</li>
+<li>Week 6: <a href="https://youtu.be/EJiXO3vwNFo" target="_blank" rel="noopener noreferrer nofollow">Senpai</a>, <a href="https://youtu.be/DKs-Tkw4X3I" target="_blank" rel="noopener noreferrer nofollow">Roses</a>, <a href="https://youtu.be/lWja270s6qA" target="_blank" rel="noopener noreferrer nofollow">Thorns</a></li>
+<li>Week 7: <a href="https://youtu.be/_pLDBCkvyUg" target="_blank" rel="noopener noreferrer nofollow">Ugh</a>, Guns, <a href="https://youtu.be/GBD2B9bDD5I" target="_blank" rel="noopener noreferrer nofollow">Stress</a></li>
+<li>Weekend 1: Darnell, Lit Up, 2Hot, Blazin</li>
+</ul>
+<h3>Update:</h3>
+<ul>
+<li><strong>Weekend Update:</strong>
+<ul>
+<li>The Weekend 1 content update is now available! The first update of the new return, developed by The Funkin&#8217; Crew Inc. Featuring the Weekend 1 story level, 12 playable Erect remixes, a revamped Freeplay menu, a new Results screen, and more.</li>
+</ul>
+</li>
+<li><strong>Pico Update</strong>:
+<ul>
+<li>The Pit Stop content update is now available! Two new Erect remixes, additional improvements to the Freeplay menu, new Results screen animations, and more.</li>
+<li>To access the new Pico songs, press <strong>[Tab]</strong> in the Freeplay menu and unlock Pico first</li>
+</ul>
+</li>
+<li><b>Pitstop 2 update :</b>
+<ul>
+<li>Added 6 new songs: Lit Up (BF Mix) &#8211; Cocoa (Pico Mix) &#8211; Senpai (Pico Mix) &#8211; Roses (Pico Mix) &#8211; Stress (Pico Mix) &#8211; Darnell Erect</li>
+<li>Added new stage variation and return of medals feature</li>
+</ul>
+</li>
+<li><strong>Updated to v0.7.4</strong> (2025-9-1)</li>
+<li><strong>Updated to v0.7.5</strong> (2025-9-19)</li>
+</ul>
+<h3><strong>Team Credits</strong></h3>
+<ul>
+<li>PRESENTED BY THE FUNKIN&#8217; CREW</li>
+<li>Programmers: <a href="https://twitter.com/ninja_muffin99" target="_blank" rel="noopener noreferrer nofollow">ninjamuffin99</a>, <a href="https://twitter.com/EliteMasterEric" target="_blank" rel="noopener noreferrer nofollow">MasterEric</a>, <a href="https://twitter.com/emmnyaa" target="_blank" rel="noopener noreferrer nofollow">MtH</a>, <a href="https://twitter.com/Geokureli/" rel="nofollow" target="_blank">GeoKureli</a></li>
+<li>Artists: <a href="https://twitter.com/phantomarcade3k" target="_blank" rel="noopener noreferrer nofollow">PhantomArcade3K</a>, <a href="https://twitter.com/evilsk8r" target="_blank" rel="noopener noreferrer nofollow">Evilsk8r</a>, <a href="https://twitter.com/moawko" target="_blank" rel="noopener noreferrer nofollow">Moawling</a>, <a href="https://twitter.com/IvanA1mighty" rel="nofollow" target="_blank">IvanAlmighty</a></li>
+<li>Music: <a href="https://twitter.com/kawaisprite" target="_blank" rel="noopener noreferrer nofollow">Kawaisprite</a>, <a href="https://twitter.com/Bassetfilms" target="_blank" rel="noopener noreferrer nofollow">BassetFilms</a></li>
+<li>Find the full credit <a href="https://github.com/FunkinCrew/funkin.assets/blob/main/exclude/data/credits.json" target="_blank" rel="nofollow">here</a></li>
+</ul>
+<h3>Github:</h3>
+<p>Check out the source code of the game on <a href="https://github.com/FunkinCrew/Funkin?tab=readme-ov-file" target="_blank" rel="nofollow">Github</a>. Learn to make your own game by studying and learning from the code, or even contribute to it. Make your own mods to share with people.</p>
+<h3>Download:</h3>
+<p>Remember for the best experience you can download the game instead of playing it on the browser. Download it on <a href="https://github.com/FunkinCrew/Funkin/releases" target="_blank" rel="nofollow">github</a>.</p>
+<p><strong>Support</strong></p>
+<ul>
+<li><a href="https://needlejuicerecords.com/pages/friday-night-funkin" target="_blank" rel="noopener noreferrer nofollow">Official Merch</a></li>
+<li><a href="https://www.kickstarter.com/projects/funkin/friday-night-funkin-the-full-ass-game" target="_blank" rel="noopener noreferrer nofollow">Kickstarter</a></li>
+<li><a href="https://ninja-muffin24.itch.io/funkin" target="_blank" rel="nofollow">Itch</a></li>
+<li><a href="https://www.newgrounds.com/portal/view/770371" target="_blank" rel="nofollow">Newgrounds</a></li>
+</ul>
+
+
+
+
+</div>
+
+
+
+<div id="howto"><h3>How to Play:</h3><ul>
+<li>WASD or arrow keys or change to DFJK in options to play</li>
+<li>+ and &#8211; to increase/decrease the volume</li>
+<li>0 to mute</li>
+<li>Enter to select</li>
+<li>ESC to go back</li>
+</ul>
+</div>
+
+
+</div>
+	</div>
+	<div id="review" class="tab-content">
+	</div>
+
+	</div>
+ <div class="bottom">
+
+		 
+<div class="tag-carousel tag-carousel2 nomobile">
+		 <span class="sf alignleft">New Games</span>
+            <div class="more"><a href="https://kbhgames.com/new">(See More)</a></div>
+		 <div id="new-games" class="slider">
+			 <div class="left-button onecol" style="display: none;"></div> <div class="right-button onecol"></div>
+			 </div>  
+ </div>
+
+<div class="tag-carousel tag-carousel2 nomobile">
+		 <span class="sf alignleft">Popular Games</span>
+            <div class="more"><a href="https://kbhgames.com/best-games">(See More)</a></div>
+			 <div id="popular" class="slider">
+			<div class="left-button onecol" style="display: none;"></div> <div class="right-button onecol"></div>
+</div>  
+ </div>
+</div>
+
+<script src='//kbhgames.com/wp-content/themes/v1/js/jquery-3.4.1.min.js'></script>
+
+	 
+
+		</div>
+	</div>
+
+<script>
+    const sidebar = document.getElementById("sidebar");
+    const toggleBtn = document.getElementById("toggle-btn");
+    const overlay = document.getElementById("overlay");
+    const searchIconBtn = document.getElementById("search-icon-btn");
+    const mobileSearch = document.getElementById("mobile-search");
+    const closeMobileSearch = document.getElementById("close-mobile-search");
+
+    function toggleSidebar() {
+      if (window.innerWidth <= 768) {
+        sidebar.classList.toggle("show");
+        overlay.classList.toggle("show");
+      } else {
+        sidebar.classList.toggle("hidden");
+      }
+    }
+
+    function showMobileSearch() {
+      mobileSearch.classList.add("show");
+    }
+
+    function hideMobileSearch() {
+      mobileSearch.classList.remove("show");
+    }
+
+    toggleBtn.addEventListener("click", toggleSidebar);
+    overlay.addEventListener("click", toggleSidebar);
+    
+    if (searchIconBtn) {
+      searchIconBtn.addEventListener("click", showMobileSearch);
+    }
+    
+    if (closeMobileSearch) {
+      closeMobileSearch.addEventListener("click", hideMobileSearch);
+    }
+
+    // Hide sidebar when Play Now button is clicked
+    const btnPlayNow = document.querySelector(".btnplaynow");
+    
+    if (btnPlayNow) {
+      btnPlayNow.addEventListener("click", () => {
+        if (window.innerWidth <= 768) {
+          // Mobile: hide overlay sidebar
+          sidebar.classList.remove("show");
+          overlay.classList.remove("show");
+        } else {
+          // Desktop: hide sidebar
+          sidebar.classList.add("hidden");
+        }
+      });
+    }
+
+    window.addEventListener("resize", () => {
+      if (window.innerWidth > 768) {
+        sidebar.classList.remove("show");
+        overlay.classList.remove("show");
+      }
+    });
+  </script>
+
+<script type="text/javascript" id="post-views-counter-pro-frontend-js-before">
+/* <![CDATA[ */
+var pvcpArgsFrontend = {"mode":"ajax","content":{"type":"post","subtype":"post","data":111243},"contentActive":true,"requestURL":"https:\/\/kbhgames.com\/wp-content\/plugins\/post-views-counter-pro\/includes\/ajax.php","nonce":"71784ed04a","dataStorage":"cookies","multisite":false,"path":"\/","domain":"","adminAjax":"https:\/\/kbhgames.com\/wp-admin\/admin-ajax.php","nonceCount":"9e710eb5a5"};
+/* ]]> */
+</script>
+<script type="text/javascript" defer src="https://kbhgames.com/wp-content/plugins/post-views-counter-pro/js/frontend.min.js?ver=1.5.4" id="post-views-counter-pro-frontend-js"></script>
+	<script type="text/javascript">
+	var relevanssi_rt_regex = /(&|\?)_(rt|rt_nonce)=(\w+)/g
+	var newUrl = window.location.search.replace(relevanssi_rt_regex, '')
+	history.replaceState(null, null, window.location.pathname + newUrl + window.location.hash)
+	</script>
+	<link rel='stylesheet' id='dashicons-css' href='https://kbhgames.com/wp-includes/css/dashicons.min.css' type='text/css' media='all' />
+<link rel='stylesheet' id='post-views-counter-frontend-css' href='https://kbhgames.com/wp-content/plugins/post-views-counter/css/frontend.min.css?ver=1.5.5' type='text/css' media='all' />
+
+
+<noscript id="deferred-styles">
+<link rel="stylesheet" type="text/css" href="/wp-content/themes/v1/style.css">
+</noscript>
+    <script>
+      var loadDeferredStyles = function() {
+        var addStylesNode = document.getElementById("deferred-styles");
+        var replacement = document.createElement("div");
+        replacement.innerHTML = addStylesNode.textContent;
+        document.body.appendChild(replacement);
+        addStylesNode.parentElement.removeChild(addStylesNode);
+      };
+      var raf = window.requestAnimationFrame || window.mozRequestAnimationFrame ||
+          window.webkitRequestAnimationFrame || window.msRequestAnimationFrame;
+      if (raf) raf(function() { window.setTimeout(loadDeferredStyles, 0); });
+      else window.addEventListener('load', loadDeferredStyles);
+    </script>
+	
+<script defer src="//kbhgames.com/wp-content/themes/v1/js/bottom-all.js"></script>
+<script defer src="//kbhgames.com/wp-content/themes/v1/js/bottom-single.js"></script>
+
+<div id="modal-login" class="ml-modal fade" tabindex="-1" role="dialog" aria-hidden="true"></div>
+</body>
+</html>
+
